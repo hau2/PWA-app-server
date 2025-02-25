@@ -5,25 +5,26 @@ const app = express();
 const PORT = 4000;
 
 app.use(cors());
+app.use('/images', express.static('public'));
 
 const posts = [
   { 
     id: 1, 
     title: "PWA with React", 
     content: "This is an introduction to PWA with ReactJS.", 
-    image: "https://pwa-app-server.leconghau.id.vn/images/react-pwa.jpg"
+    image: "https://onetech.vn/wp-content/uploads/2023/01/image-1.jpeg"
   },
   { 
     id: 2, 
     title: "Offline Mode in PWA", 
     content: "Learn how to make your PWA work offline.", 
-    image: "http://pwa-app-server.leconghau.id.vn/images/offline-mode.jpg"
+    image: "https://cdn.prod.website-files.com/649300f3606e51cb999842df/65718ea3394324fa4737b672_883ca625de7c44c48148d71a891020a0.png"
   },
   { 
     id: 3, 
     title: "Caching with Workbox", 
     content: "Workbox makes it easy to cache resources.", 
-    image: "http://pwa-app-server.leconghau.id.vn/images/workbox-cache.jpg"
+    image: "https://miro.medium.com/v2/resize:fit:1000/1*Dlr1sdN1idUXk9MKImD0Mw.png"
   }
 ];
 
