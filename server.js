@@ -12,19 +12,19 @@ const posts = [
     id: 1, 
     title: "PWA with React", 
     content: "This is an introduction to PWA with ReactJS.", 
-    image: "https://onetech.vn/wp-content/uploads/2023/01/image-1.jpeg"
+    image: "https://hau2.github.io/online-resources/react-pwa.jpg"
   },
   { 
     id: 2, 
     title: "Offline Mode in PWA", 
     content: "Learn how to make your PWA work offline.", 
-    image: "https://cdn.prod.website-files.com/649300f3606e51cb999842df/65718ea3394324fa4737b672_883ca625de7c44c48148d71a891020a0.png"
+    image: "https://hau2.github.io/online-resources/offline-mode.jpg"
   },
   { 
     id: 3, 
     title: "Caching with Workbox", 
     content: "Workbox makes it easy to cache resources.", 
-    image: "https://miro.medium.com/v2/resize:fit:1000/1*Dlr1sdN1idUXk9MKImD0Mw.png"
+    image: "https://hau2.github.io/online-resources/workbook-cache.jpg"
   }
 ];
 
