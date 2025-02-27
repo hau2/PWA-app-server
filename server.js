@@ -141,14 +141,15 @@ app.post('/api/notification/subscribe', (req, res) => {
 
 // 🔹 API to send a push notification
 app.post('/api/notification/send', async (req, res) => {
-  const { title, message } = req.body;
-  const payload = JSON.stringify({ title, message });
+  const { title, message, url } = req.body;
+  const payload = JSON.stringify({ title, message, url });
 
   try {
     subscriptions.forEach(sub => {
-      webpush.sendNotification(sub, payload).catch(err => console.error('❌ Push failed:', err));
+      webpush.sendNotification(sub, payload)
+        .catch(err => console.error('❌ Push failed:', err));
     });
-    res.status(200).json({ message: 'Notification sent' });
+    res.status(200).json({ message: 'Notification sent successfully' });
   } catch (error) {
     console.error('❌ Error sending push:', error);
     res.status(500).json({ error: 'Error sending notification' });
